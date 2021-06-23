@@ -13,15 +13,7 @@ namespace Frends.Community.WebHooks
  
     public static class WebHooks
     {
-        /// <summary>
-        /// This is task
-        /// Documentation: https://github.com/CommunityHiQ/Frends.Community.WebHooks
-        /// </summary>
-        /// <param name="input">What to repeat.</param>
-        /// <param name="options">Define if repeated multiple times. </param>
-        /// <param name="cancellationToken"></param>
-        /// <param name="var"></param>
-        /// <returns>{string Replication} </returns>
+
         public static async Task<Result> CreateKeyValueWebHook([PropertyTab]WebHookAttributes input, [PropertyTab] Options options, CancellationToken cancellationToken)
         {
             cancellationToken.ThrowIfCancellationRequested();
